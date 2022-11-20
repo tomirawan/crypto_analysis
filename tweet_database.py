@@ -5,11 +5,11 @@ import psycopg2.extras as extras
 import re
 import snscrape.modules.twitter as sntwitter
 
-conn = pg.connect(database="tweet_db", 
-                        user='postgres',
-                        password=12345, 
-                        host='localhost', 
-                        port= '5432')
+conn = pg.connect(database=<your database>, 
+                        user=<username>,
+                        password=<password>, 
+                        host=<your host>', 
+                        port= <port>)
 conn.autocommit = True
 cursor = conn.cursor()
 
